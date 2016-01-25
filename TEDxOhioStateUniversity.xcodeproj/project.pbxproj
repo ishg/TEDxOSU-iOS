@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31EA7FA682ACB1A6B4A15034 /* Pods_TEDxOhioStateUniversity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0784692957DBD63299C76 /* Pods_TEDxOhioStateUniversity.framework */; };
+		DC2C81D71C55E3BD0036FA61 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */; };
 		DC59E6461C5539E10027AE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59E6451C5539E10027AE37 /* AppDelegate.swift */; };
 		DC59E64B1C5539E10027AE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC59E6491C5539E10027AE37 /* Main.storyboard */; };
 		DC59E64D1C5539E10027AE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC59E64C1C5539E10027AE37 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		79C2B414AB1E50F014FC7A2E /* Pods-TEDxOhioStateUniversity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDxOhioStateUniversity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEDxOhioStateUniversity/Pods-TEDxOhioStateUniversity.debug.xcconfig"; sourceTree = "<group>"; };
 		B7EB3CD663F8DBE5177F840B /* Pods-TEDxOhioStateUniversity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDxOhioStateUniversity.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEDxOhioStateUniversity/Pods-TEDxOhioStateUniversity.release.xcconfig"; sourceTree = "<group>"; };
+		DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		DC59E6421C5539E10027AE37 /* TEDxOhioStateUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDxOhioStateUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC59E6451C5539E10027AE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC59E64A1C5539E10027AE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DC59E6451C5539E10027AE37 /* AppDelegate.swift */,
 				DC59E6651C553CF50027AE37 /* Speaker.swift */,
 				DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */,
+				DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */,
 				DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */,
 				DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */,
 				DC59E6491C5539E10027AE37 /* Main.storyboard */,
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2C81D71C55E3BD0036FA61 /* SpeakerViewController.swift in Sources */,
 				DCB79EEF1C55C54D008B8ABF /* SpeakerTableViewController.swift in Sources */,
 				DC59E6661C553CF50027AE37 /* Speaker.swift in Sources */,
 				DC59E6681C553D8E0027AE37 /* SpeakerModel.swift in Sources */,
