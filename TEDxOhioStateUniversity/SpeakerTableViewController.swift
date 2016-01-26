@@ -14,7 +14,7 @@ class SpeakerTableViewController: UITableViewController {
     
     
     var speakers:[Speaker] = [Speaker]()
-    
+    var selectedSpeaker:Speaker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +33,6 @@ class SpeakerTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -45,7 +43,7 @@ class SpeakerTableViewController: UITableViewController {
         return self.speakers.count
     }
 
-    
+    //Populate the cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "SpeakerTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! SpeakerTableViewCell
@@ -59,6 +57,24 @@ class SpeakerTableViewController: UITableViewController {
 
         return cell
     }
+    
+    
+    //User selected a speaker
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.selectedSpeaker = self.speakers[indexPath.row]
+        self.performSegueWithIdentifier("goToSpeakerDetail", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //Get reference to destination view controller
+        let detailViewController = segue.destinationViewController as! SpeakerViewController
+        
+        //Set selected video property of destination view controller
+        detailViewController.selectedSpeaker = self.selectedSpeaker
+    }
+    
+    
     
 
     /*

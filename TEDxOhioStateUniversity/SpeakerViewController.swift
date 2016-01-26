@@ -14,10 +14,29 @@ class SpeakerViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet weak var profileImageViewHeightConstraint: NSLayoutConstraint!
+    
+    var selectedSpeaker:Speaker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if let vid = self.selectedSpeaker{
+            self.nameLabel.text = vid.name
+            self.titleLabel.text = vid.title
+            self.profileImageView.image = UIImage(named: vid .photo)!
+            self.bioLabel.text = vid.bio
+            
+            let width = self.view.frame.size.width
+            self.profileImageViewHeightConstraint.constant = width
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
