@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class SpeakerViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class SpeakerViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
     @IBOutlet weak var profileImageViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     var selectedSpeaker:Speaker?
     
@@ -22,6 +24,8 @@ class SpeakerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //self.activityIndicatorView.startAnimating()
+        SwiftSpinner.show("Loading...")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -36,6 +40,11 @@ class SpeakerViewController: UIViewController {
             self.profileImageViewHeightConstraint.constant = width
             
         }
+        
+        SwiftSpinner.hide()
+        
+        //self.activityIndicatorView.stopAnimating()
+        //self.activityIndicatorView.hidesWhenStopped = true
         
     }
 

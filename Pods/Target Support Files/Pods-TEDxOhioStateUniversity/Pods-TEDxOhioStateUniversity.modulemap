@@ -1,0 +1,6 @@
+framework module Pods_TEDxOhioStateUniversity {
+  umbrella header "Pods-TEDxOhioStateUniversity-umbrella.h"
+
+  export *
+  module * { export * }
+}

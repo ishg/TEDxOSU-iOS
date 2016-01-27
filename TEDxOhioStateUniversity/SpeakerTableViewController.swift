@@ -72,6 +72,7 @@ class SpeakerTableViewController: UITableViewController {
         
         //Set selected video property of destination view controller
         detailViewController.selectedSpeaker = self.selectedSpeaker
+        
     }
     
     
