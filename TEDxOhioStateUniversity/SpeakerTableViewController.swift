@@ -12,6 +12,12 @@ class SpeakerTableViewController: UITableViewController {
 
     @IBOutlet weak var speakerTableView: UITableView!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // Initialize Tab Bar Item
+        tabBarItem = UITabBarItem(title: "Speakers", image: UIImage(named: "icon-people"), tag: 1)
+    }
     
     var speakers:[Speaker] = [Speaker]()
     var selectedSpeaker:Speaker?

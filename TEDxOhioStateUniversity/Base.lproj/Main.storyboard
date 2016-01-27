@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9ZV-08-12d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzY-W9-EkB">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -71,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysV-Kk-dWL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysV-Kk-dWL">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-aF-jK8" userLabel="Content View">
@@ -150,10 +150,62 @@
             </objects>
             <point key="canvasLocation" x="1824" y="674"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="eXq-GU-7ri">
+            <objects>
+                <tabBarController id="hzY-W9-EkB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EDh-P4-IvR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8P3-wT-JH2" kind="relationship" relationship="viewControllers" id="yjN-5r-7Ds"/>
+                        <segue destination="9ZV-08-12d" kind="relationship" relationship="viewControllers" id="fyV-2V-whd"/>
+                        <segue destination="miq-DX-Ihf" kind="relationship" relationship="viewControllers" id="stw-OW-bhD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ton-0Y-WZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="674"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="85L-r2-QIe">
+            <objects>
+                <viewController title="About" id="miq-DX-Ihf" customClass="AboutViewController" customModule="TEDxOhioStateUniversity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ava-Bu-QE7"/>
+                        <viewControllerLayoutGuide type="bottom" id="xYn-Kb-iWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xrO-8P-5mg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZm-nD-SZt">
+                                <rect key="frame" x="20" y="84" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pZm-nD-SZt" firstAttribute="top" secondItem="ava-Bu-QE7" secondAttribute="bottom" constant="20" id="71H-oh-eZO"/>
+                            <constraint firstItem="pZm-nD-SZt" firstAttribute="leading" secondItem="xrO-8P-5mg" secondAttribute="leading" constant="20" id="7nU-cr-nmW"/>
+                            <constraint firstAttribute="trailing" secondItem="pZm-nD-SZt" secondAttribute="trailing" constant="20" id="cOa-H0-jc2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="aZB-Nb-umb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdo-XC-QLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="-78"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="Hsm-9g-jKs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ZV-08-12d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0yg-q4-H0V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ThT-aR-6ZL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -167,6 +219,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J32-fH-IPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="674"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="out-4g-2HQ">
+            <objects>
+                <viewController title="Home" id="8P3-wT-JH2" customClass="HomeViewController" customModule="TEDxOhioStateUniversity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="djg-RS-bt6"/>
+                        <viewControllerLayoutGuide type="bottom" id="uVW-hU-M9t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dK-RF-e4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oeI-ZM-4kg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgp-hq-SDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="1461"/>
         </scene>
     </scenes>
     <resources>

@@ -16,6 +16,8 @@
 		DC59E65B1C5539E10027AE37 /* TEDxOhioStateUniversityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59E65A1C5539E10027AE37 /* TEDxOhioStateUniversityTests.swift */; };
 		DC59E6661C553CF50027AE37 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59E6651C553CF50027AE37 /* Speaker.swift */; };
 		DC59E6681C553D8E0027AE37 /* SpeakerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */; };
+		DC59F5D71C587B770000BF74 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59F5D61C587B770000BF74 /* AboutViewController.swift */; };
+		DC59F5D91C587C130000BF74 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59F5D81C587C130000BF74 /* HomeViewController.swift */; };
 		DCB79EED1C55BAFC008B8ABF /* SpeakerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */; };
 		DCB79EEF1C55C54D008B8ABF /* SpeakerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,8 @@
 		DC59E65C1C5539E10027AE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC59E6651C553CF50027AE37 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerModel.swift; sourceTree = "<group>"; };
+		DC59F5D61C587B770000BF74 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DC59F5D81C587C130000BF74 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
 		DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewController.swift; sourceTree = "<group>"; };
 		F7B0784692957DBD63299C76 /* Pods_TEDxOhioStateUniversity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEDxOhioStateUniversity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,12 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				DC59E6451C5539E10027AE37 /* AppDelegate.swift */,
-				DC59E6651C553CF50027AE37 /* Speaker.swift */,
-				DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */,
-				DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */,
-				DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */,
-				DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */,
+				DC59F5D51C587B5D0000BF74 /* Speaker */,
 				DC59E6491C5539E10027AE37 /* Main.storyboard */,
+				DC59F5D81C587C130000BF74 /* HomeViewController.swift */,
+				DC59F5D61C587B770000BF74 /* AboutViewController.swift */,
 				DC59E64C1C5539E10027AE37 /* Assets.xcassets */,
 				DC59E64E1C5539E10027AE37 /* LaunchScreen.storyboard */,
 				DC59E6511C5539E10027AE37 /* Info.plist */,
@@ -122,6 +124,18 @@
 				DC59E65C1C5539E10027AE37 /* Info.plist */,
 			);
 			path = TEDxOhioStateUniversityTests;
+			sourceTree = "<group>";
+		};
+		DC59F5D51C587B5D0000BF74 /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				DC59E6651C553CF50027AE37 /* Speaker.swift */,
+				DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */,
+				DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */,
+				DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */,
+				DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */,
+			);
+			name = Speaker;
 			sourceTree = "<group>";
 		};
 		EBA953852DADB219E2A296A1 /* Frameworks */ = {
@@ -287,6 +301,8 @@
 				DC2C81D71C55E3BD0036FA61 /* SpeakerViewController.swift in Sources */,
 				DCB79EEF1C55C54D008B8ABF /* SpeakerTableViewController.swift in Sources */,
 				DC59E6661C553CF50027AE37 /* Speaker.swift in Sources */,
+				DC59F5D91C587C130000BF74 /* HomeViewController.swift in Sources */,
+				DC59F5D71C587B770000BF74 /* AboutViewController.swift in Sources */,
 				DC59E6681C553D8E0027AE37 /* SpeakerModel.swift in Sources */,
 				DCB79EED1C55BAFC008B8ABF /* SpeakerTableViewCell.swift in Sources */,
 				DC59E6461C5539E10027AE37 /* AppDelegate.swift in Sources */,
