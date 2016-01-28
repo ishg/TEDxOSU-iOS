@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import Static
 
 class AboutViewController: UIViewController {
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "About", image: UIImage(named: "icon-info"), tag: 2)
+        tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "icon-info"), tag: 2)
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "About"
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 

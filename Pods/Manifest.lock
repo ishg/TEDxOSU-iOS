@@ -1,12 +1,24 @@
 PODS:
+  - Static (0.2.0)
   - SwiftSpinner (0.8.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Static (from `https://github.com/venmo/Static`)
   - SwiftSpinner
   - SwiftyJSON (~> 2.3)
 
+EXTERNAL SOURCES:
+  Static:
+    :git: https://github.com/venmo/Static
+
+CHECKOUT OPTIONS:
+  Static:
+    :commit: d1d4a485c72fa8ed28cf2a6fec13f73e0f7a1405
+    :git: https://github.com/venmo/Static
+
 SPEC CHECKSUMS:
+  Static: b48f14dbacee91ac877bdf37c607f7524b1213ee
   SwiftSpinner: 11c2c5ec7443d92f3026d3067ca8a91d4adef13f
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

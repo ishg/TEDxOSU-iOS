@@ -9,8 +9,6 @@
 import UIKit
 
 class SpeakerTableViewController: UITableViewController {
-
-    @IBOutlet weak var speakerTableView: UITableView!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

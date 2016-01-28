@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-TEDxOhioStateUniversity/Static.framework"
   install_framework "Pods-TEDxOhioStateUniversity/SwiftSpinner.framework"
   install_framework "Pods-TEDxOhioStateUniversity/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-TEDxOhioStateUniversity/Static.framework"
   install_framework "Pods-TEDxOhioStateUniversity/SwiftSpinner.framework"
   install_framework "Pods-TEDxOhioStateUniversity/SwiftyJSON.framework"
 fi
