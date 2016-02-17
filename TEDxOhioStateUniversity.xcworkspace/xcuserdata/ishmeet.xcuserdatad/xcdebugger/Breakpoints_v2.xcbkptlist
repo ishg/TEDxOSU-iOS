@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TEDxOhioStateUniversity/AboutViewController.swift"
-            timestampString = "477367407.572372"
+            timestampString = "477441761.183942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "AboutViewController"
             landmarkType = "3">
          </BreakpointContent>

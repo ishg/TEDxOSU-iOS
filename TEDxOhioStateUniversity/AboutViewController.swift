@@ -11,6 +11,14 @@ import Static
 
 class AboutViewController: UIViewController {
     
+    @IBOutlet weak var BannerImageHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var headlineLabel: UILabel!
+    
+    
+    
+    
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -27,6 +35,9 @@ class AboutViewController: UIViewController {
         //tabBarItem.image = tabBarItem.image.imageWithColor(UIColor.yellowColor()).imageWithRenderingMode(.AlwaysOriginal)
         
         
+        let width = self.view.frame.size.width
+        self.BannerImageHeightConstraint.constant = width/3575 * 500
+        self.headlineLabel.text = "TEDxOhioStateUniversity is a student organization at Ohio State founded in 2011 and comprises of mainly undergraduate students and university faculty. It is locally funded by various sponsors at Ohio State and within Columbus. Student members organize an annual event comprising of TED Talk videos and live speakers from the greater Ohio State University community."
         
         // Do any additional setup after loading the view.
     }
