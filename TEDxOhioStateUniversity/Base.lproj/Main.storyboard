@@ -254,7 +254,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="787"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M1-Wl-mnr" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="552"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="banner-white" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-C4-Vpi">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
@@ -324,27 +324,62 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="afR-f3-tVK" userLabel="Stack View - Social">
-                                                <rect key="frame" x="20" y="492" width="560" height="30"/>
+                                                <rect key="frame" x="20" y="492" width="560" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBg-fk-W6s">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="D4U-AX-82b"/>
+                                                            <constraint firstAttribute="height" constant="40" id="k4I-v3-dWa"/>
+                                                        </constraints>
                                                         <state key="normal" image="icon-earth"/>
+                                                        <connections>
+                                                            <action selector="webButtonPressed:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="dZc-Mk-hTr"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIt-Ag-C0y">
-                                                        <rect key="frame" x="133" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="130" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="PvR-8e-saG"/>
+                                                            <constraint firstAttribute="height" constant="40" id="xKJ-ca-Lh1"/>
+                                                        </constraints>
                                                         <state key="normal" image="icon-facebook"/>
+                                                        <connections>
+                                                            <action selector="facebookButtonPressed:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="itU-dq-gGL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4N-Lt-RM8">
-                                                        <rect key="frame" x="265" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="260" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="FmE-se-sTN"/>
+                                                            <constraint firstAttribute="height" constant="40" id="ddh-Ed-HAI"/>
+                                                        </constraints>
                                                         <state key="normal" image="icon-twitter"/>
+                                                        <connections>
+                                                            <action selector="twitterButtonPressed:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="ssA-q8-7cF"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcD-4U-WFf">
-                                                        <rect key="frame" x="398" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="390" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="hVO-XT-ke0"/>
+                                                            <constraint firstAttribute="width" constant="40" id="xPH-Ss-BJs"/>
+                                                        </constraints>
                                                         <state key="normal" image="icon-instagram"/>
+                                                        <connections>
+                                                            <action selector="instaButtonPressed:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="fkg-jc-sfb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-T6-DYd">
-                                                        <rect key="frame" x="530" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="520" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="4ww-qA-9nj"/>
+                                                            <constraint firstAttribute="height" constant="40" id="OK1-fc-6Eu"/>
+                                                        </constraints>
                                                         <state key="normal" image="icon-youtube"/>
+                                                        <connections>
+                                                            <action selector="youtubeButtonPressed:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="zMc-zY-btm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -397,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSK-F2-swT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="1591"/>
+            <point key="canvasLocation" x="1214" y="1559"/>
         </scene>
     </scenes>
     <resources>

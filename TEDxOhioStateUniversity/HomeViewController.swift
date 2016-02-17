@@ -16,10 +16,46 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var bannerImageHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var headlineLabel: UILabel!
-    @IBOutlet weak var earlyBirdLabel: UILabel!
-    @IBOutlet weak var regPriceLabel: UILabel!
     
-    @IBOutlet weak var registerButton: UIButton!
+    @IBAction func webButtonPressed(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string:"http://tedx.osu.edu")!)
+    }
+    
+    @IBAction func facebookButtonPressed(sender: AnyObject) {
+        
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"fb://facewebmodal/f?href=https://www.facebook.com/TEDxOhioStateU")!)){
+            UIApplication.sharedApplication().openURL(NSURL(string:"fb://facewebmodal/f?href=https://www.facebook.com/TEDxOhioStateU")!)
+        } else{
+            UIApplication.sharedApplication().openURL(NSURL(string:"https://www.facebook.com/TEDxOhioStateU/")!)
+        }
+        
+    }
+    
+    @IBAction func twitterButtonPressed(sender: AnyObject) {
+        
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"twitter://user?screen_name=TEDxOhioStateU")!)){
+            UIApplication.sharedApplication().openURL(NSURL(string:"twitter://user?screen_name=TEDxOhioStateU")!)
+        } else{
+            UIApplication.sharedApplication().openURL(NSURL(string:"http://twitter.com/TEDxOhioStateU")!)
+        }
+        
+    }
+    
+    @IBAction func instaButtonPressed(sender: AnyObject) {
+        
+        if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"instagram://user?username=tedxohiostateu")!)){
+            UIApplication.sharedApplication().openURL(NSURL(string:"instagram://user?username=tedxohiostateu")!)
+        } else{
+            UIApplication.sharedApplication().openURL(NSURL(string:"http://instagram.com/tedxohiostateu")!)
+        }
+        
+    }
+    
+    @IBAction func youtubeButtonPressed(sender: AnyObject) {
+        
+        UIApplication.sharedApplication().openURL(NSURL(string:"https://www.youtube.com/watch?v=XSvhWs2M9JI&list=PLB18FCCC5AD700BFB")!)
+        
+    }
     
     // MARK: Initialize
     
