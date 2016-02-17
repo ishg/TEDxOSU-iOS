@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "icon-home"), tag: 0)
+        //tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "icon-home"), tag: 0)
     }
     
     override func viewDidLoad() {

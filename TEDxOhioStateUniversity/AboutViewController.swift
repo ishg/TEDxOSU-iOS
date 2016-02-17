@@ -24,6 +24,8 @@ class AboutViewController: UIViewController {
         
         title = "About"
         
+        //tabBarItem.image = tabBarItem.image.imageWithColor(UIColor.yellowColor()).imageWithRenderingMode(.AlwaysOriginal)
+        
         
         
         // Do any additional setup after loading the view.
@@ -44,5 +46,7 @@ class AboutViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+   
 
 }

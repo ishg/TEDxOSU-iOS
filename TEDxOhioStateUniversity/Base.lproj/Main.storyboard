@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzY-W9-EkB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzY-W9-EkB">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Speakers-->
@@ -169,11 +169,11 @@
             </objects>
             <point key="canvasLocation" x="-447" y="674"/>
         </scene>
-        <!--Item-->
+        <!--Speakers-->
         <scene sceneID="Hsm-9g-jKs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ZV-08-12d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0yg-q4-H0V"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Speakers" image="icon-people" selectedImage="icon-people" id="0yg-q4-H0V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ThT-aR-6ZL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -188,11 +188,11 @@
             </objects>
             <point key="canvasLocation" x="289" y="674"/>
         </scene>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="Omb-VO-CeW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bHd-yN-BvC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aZB-Nb-umb"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="About" image="icon-info" id="aZB-Nb-umb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oLz-Cm-3vI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -204,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="405" y="-78"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="piU-Wg-MdL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dSS-9r-rf3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oeI-ZM-4kg"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icon-home" id="oeI-ZM-4kg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MMk-uY-7KO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -425,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSK-F2-swT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="1353"/>
+            <point key="canvasLocation" x="1101" y="1591"/>
         </scene>
     </scenes>
     <resources>

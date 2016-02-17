@@ -14,7 +14,7 @@ class SpeakerTableViewController: UITableViewController {
         super.init(coder: aDecoder)
         
         // Initialize Tab Bar Item
-        tabBarItem = UITabBarItem(title: "Speakers", image: UIImage(named: "icon-people"), tag: 1)
+        //tabBarItem = UITabBarItem(title: "Speakers", image: UIImage(named: "icon-people"), tag: 1)
     }
     
     var speakers:[Speaker] = [Speaker]()
