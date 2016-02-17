@@ -40,8 +40,7 @@ class HomeViewController: UIViewController {
         let width = self.view.frame.size.width
         self.bannerImageHeightConstraint.constant = width/764 * 366
         self.headlineLabel.text = "Join TEDxOhioStateUniversity for our 5th annual event. This year's theme, Reconstructing Reality, will feature students, faculty, staff, and alumni as speakers and performers who will inspire and challenge our concepts of science, technology, history, and life."
-        self.earlyBirdLabel.text = "$15 (students), $25 (non-students)"
-        self.regPriceLabel.text = "$20 (students), $30 (non-students)"
+        //self.headlineLabel.textColor = uicolorFromHex(0xe62b1e)
         
     }
 
