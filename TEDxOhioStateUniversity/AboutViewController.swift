@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Static
 
 class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -20,7 +19,71 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var tableView: UITableView!
     
     
-    var items: [String] = ["We", "Heart", "Swift"]
+    let committees = ["Communications", "Logistics", "Community Engagement", "Design", "Finance", "Conent", "Marketing"]
+    
+    let members = [
+        [
+            "Tracey Okine",
+            "Liv Birdsall",
+            "Joel Salas",
+            "Viv Le",
+            "Sri Karri",
+            "Maheen Nadeem"
+        ],
+        [
+            "Cassandra Lechner",
+            "Jasneet Singh",
+            "Karan Rai",
+            "Afifah Ayub",
+            "Hallie Nudelman",
+            "Melissa Mahan",
+            "Nabiha Islam",
+            "Bailey Cross",
+            "Sara Liang"
+        ],
+        [
+            "Ali Kovacevich",
+            "Alex Armeni",
+            "Caroline Klug",
+            "Vaughn Hunt"
+        ],
+        [
+            "Wandi Xu",
+            "Nicole Riemer",
+            "Jacob Katz",
+            "Da Lee"
+        ],
+        [
+            "Jay Jackson",
+            "Mengjia Li",
+            "Mansi Arora"
+        ],
+        [
+            "Sarah Beadle",
+            "Vanja Tolj",
+            "Chanan Brown",
+            "Jordan Royster",
+            "Mehak Arora",
+            "Jessica Mongilio",
+            "Michael Watson",
+            "Jordan Moseley",
+            "Sierra Nave",
+            "Corey Keyser"
+        ],
+        [
+            "Samantha Lechner",
+            "Deepti Gupta",
+            "Elizabeth Parisi",
+            "Ryan Hines",
+            "Stephanie Payano",
+            "Jocelyn May",
+            "Greg Nagy",
+            "Mihir Baxi",
+            "Andrew Lewis",
+            "Lexi Hemker",
+            "Jessica Shakesprere"
+        ]
+    ]
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -58,25 +121,36 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     // MARK: - Table Methods
+    
 
-
+    /*
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
+    }
+    */
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return self.committees.count
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.members[section].count
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.committees[section]
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
         let cellIdentifier = "teamCell"
         let cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         
-        let speaker = self.items[indexPath.row]
-        cell.textLabel?.text = speaker
+        cell.textLabel?.text = self.members[indexPath.section][indexPath.row]
         
         return cell
-        
-        
     }
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
