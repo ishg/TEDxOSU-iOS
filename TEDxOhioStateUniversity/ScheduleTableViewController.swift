@@ -153,6 +153,21 @@ class ScheduleTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        switch indexPath.row{
+            case 2,3,4,5,6,7,8:
+                self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 2]
+                self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
+            case 11,12,13,14,15:
+                self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 11]
+                self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
+            case 18,19,20,21,22,23:
+                self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 18]
+                self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
+            default:
+                ""
+        }
+        
+        
         
     }
     
@@ -160,6 +175,11 @@ class ScheduleTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let detailViewController = segue.destinationViewController as! SpeakerViewController
+        
+        detailViewController.selectedSpeaker = self.selectedSpeaker
+        
     }
 
     

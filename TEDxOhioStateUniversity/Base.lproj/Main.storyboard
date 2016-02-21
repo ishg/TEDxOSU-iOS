@@ -162,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvQ-JU-Q6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824" y="674"/>
+            <point key="canvasLocation" x="1831" y="674"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eXq-GU-7ri">
@@ -201,7 +201,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J32-fH-IPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="674"/>
+            <point key="canvasLocation" x="405" y="674"/>
         </scene>
         <!--About-->
         <scene sceneID="Omb-VO-CeW">
@@ -484,7 +484,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzx-W7-pNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="1461"/>
+            <point key="canvasLocation" x="405" y="1454"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="iFc-KI-EWc">
@@ -501,7 +501,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLB-0u-lwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289" y="2514"/>
+            <point key="canvasLocation" x="405" y="2241"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="Bel-OH-1uE">
@@ -592,10 +592,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Schedule" id="doq-1a-Rbd"/>
+                    <connections>
+                        <segue destination="lfT-kO-hSO" kind="show" identifier="goToSpeakerFromSchedule" id="WEN-k0-653"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZi-lR-pCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113" y="2509"/>
+            <point key="canvasLocation" x="1095" y="2241"/>
         </scene>
         <!--TEDxOhioStateUniversity-->
         <scene sceneID="FbI-ef-xQg">
@@ -606,11 +609,11 @@
                         <viewControllerLayoutGuide type="bottom" id="WiP-Ew-uuh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8vC-5i-gHN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-DV-esd">
-                                <rect key="frame" x="0.0" y="64" width="600" height="787"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M1-Wl-mnr" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="552"/>
@@ -782,7 +785,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="TEDxOhioStateUniversity" id="FL8-6S-TL8"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="900"/>
+                    <size key="freeformSize" width="600" height="700"/>
                     <connections>
                         <outlet property="bannerImageHeightConstraint" destination="vG5-Q1-Vex" id="Cp5-j4-6Wq"/>
                         <outlet property="bannerImageView" destination="tlT-C4-Vpi" id="1hT-G7-DMf"/>
@@ -791,7 +794,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSK-F2-swT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="1611"/>
+            <point key="canvasLocation" x="1101" y="1467"/>
         </scene>
     </scenes>
     <resources>
@@ -810,4 +813,7 @@
         <image name="icon-youtube" width="30" height="30"/>
         <image name="logo-black" width="3575" height="500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WEN-k0-653"/>
+    </inferredMetricsTieBreakers>
 </document>
