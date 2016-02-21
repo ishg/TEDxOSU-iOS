@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hzY-W9-EkB">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -177,6 +176,7 @@
                     <connections>
                         <segue destination="dSS-9r-rf3" kind="relationship" relationship="viewControllers" id="yjN-5r-7Ds"/>
                         <segue destination="9ZV-08-12d" kind="relationship" relationship="viewControllers" id="fyV-2V-whd"/>
+                        <segue destination="PHD-Gb-pnF" kind="relationship" relationship="viewControllers" id="dVm-Z5-nqr"/>
                         <segue destination="bHd-yN-BvC" kind="relationship" relationship="viewControllers" id="stw-OW-bhD"/>
                     </connections>
                 </tabBarController>
@@ -486,6 +486,117 @@
             </objects>
             <point key="canvasLocation" x="289" y="1461"/>
         </scene>
+        <!--Schedule-->
+        <scene sceneID="iFc-KI-EWc">
+            <objects>
+                <navigationController id="PHD-Gb-pnF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Schedule" image="icon-schedule" id="cHz-H8-b9x"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bgs-DC-CoJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="boQ-gl-Q50" kind="relationship" relationship="rootViewController" id="nT9-g7-CVr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLB-0u-lwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="2514"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="Bel-OH-1uE">
+            <objects>
+                <tableViewController title="Schedule" id="boQ-gl-Q50" customClass="ScheduleTableViewController" customModule="TEDxOhioStateUniversity" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="m7A-Em-l9a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="scheduleHeaderCell" rowHeight="45" id="fWh-bj-BYv" customClass="ScheduleHeaderViewCell" customModule="TEDxOhioStateUniversity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fWh-bj-BYv" id="tOw-Ee-y1n">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-Ye-fcf">
+                                            <rect key="frame" x="252" y="10" width="80" height="20"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-iG-nT5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmA-j3-WCT">
+                                                    <rect key="frame" x="46" y="0.0" width="34" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mAQ-Ye-fcf" firstAttribute="centerY" secondItem="tOw-Ee-y1n" secondAttribute="centerY" id="Fq6-HU-l5l"/>
+                                        <constraint firstItem="mAQ-Ye-fcf" firstAttribute="centerX" secondItem="tOw-Ee-y1n" secondAttribute="centerX" id="yA2-NY-rt9"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="timeLabel" destination="gEy-iG-nT5" id="zQb-XB-vOR"/>
+                                    <outlet property="titleLabel" destination="EmA-j3-WCT" id="oOP-JN-7xL"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="scheduleSpeakerCell" rowHeight="90" id="bVN-Ex-wMM" customClass="ScheduleSpeakerViewCell" customModule="TEDxOhioStateUniversity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="137" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bVN-Ex-wMM" id="D30-jU-7Bx">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="kqz-74-2Ed">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="BUQ-yC-xai"/>
+                                                <constraint firstAttribute="width" constant="90" id="EJ6-m0-uev"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUB-ba-1Lg">
+                                            <rect key="frame" x="105" y="13" width="479" height="63"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="16"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NUB-ba-1Lg" firstAttribute="leading" secondItem="kqz-74-2Ed" secondAttribute="trailing" constant="15" id="NXo-Cf-R99"/>
+                                        <constraint firstItem="kqz-74-2Ed" firstAttribute="leading" secondItem="D30-jU-7Bx" secondAttribute="leading" id="bU7-Dx-Mtt"/>
+                                        <constraint firstItem="NUB-ba-1Lg" firstAttribute="top" secondItem="D30-jU-7Bx" secondAttribute="topMargin" constant="5" id="dH1-bL-0m0"/>
+                                        <constraint firstItem="kqz-74-2Ed" firstAttribute="top" secondItem="D30-jU-7Bx" secondAttribute="top" id="fTC-Q0-QuX"/>
+                                        <constraint firstItem="NUB-ba-1Lg" firstAttribute="centerY" secondItem="D30-jU-7Bx" secondAttribute="centerY" id="vTs-KM-Lim"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="NUB-ba-1Lg" secondAttribute="trailing" constant="8" id="z8E-8O-d0x"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="speakerImage" destination="kqz-74-2Ed" id="AwU-a3-lBc"/>
+                                    <outlet property="speakerTitle" destination="NUB-ba-1Lg" id="K9t-HU-wng"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="boQ-gl-Q50" id="x2b-Tp-V7k"/>
+                            <outlet property="delegate" destination="boQ-gl-Q50" id="jxz-dH-Li3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="doq-1a-Rbd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZi-lR-pCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="2509"/>
+        </scene>
         <!--TEDxOhioStateUniversity-->
         <scene sceneID="FbI-ef-xQg">
             <objects>
@@ -694,6 +805,7 @@
         <image name="icon-instagram" width="30" height="30"/>
         <image name="icon-location" width="30" height="30"/>
         <image name="icon-people" width="30" height="30"/>
+        <image name="icon-schedule" width="30" height="30"/>
         <image name="icon-twitter" width="30" height="30"/>
         <image name="icon-youtube" width="30" height="30"/>
         <image name="logo-black" width="3575" height="500"/>

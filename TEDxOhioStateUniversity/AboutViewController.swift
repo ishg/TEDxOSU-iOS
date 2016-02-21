@@ -200,12 +200,6 @@ class AboutViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.textLabel?.text = self.members[indexPath.section][indexPath.row]
         
-        
-        
-        
-        
-        
-        
         return cell
     }
     

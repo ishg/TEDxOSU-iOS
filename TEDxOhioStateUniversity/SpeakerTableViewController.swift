@@ -31,7 +31,7 @@ class SpeakerTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.speakers = SpeakerModel().getSpeakers()
-        //SwiftSpinner.show("Loading...")
+        
     }
 
     override func didReceiveMemoryWarning() {

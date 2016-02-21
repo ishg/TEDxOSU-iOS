@@ -14,5 +14,6 @@ class Speaker: NSObject {
     var title:String = ""
     var bio:String = ""
     var photo:String = ""
+    var speech:String = ""
     
 }
