@@ -49,6 +49,7 @@
 		DC59E6671C553D8E0027AE37 /* SpeakerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerModel.swift; sourceTree = "<group>"; };
 		DC59F5D61C587B770000BF74 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		DC59F5D81C587C130000BF74 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DCAD3E781C7946B4004562D0 /* TEDxOhioStateUniversity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TEDxOhioStateUniversity.entitlements; sourceTree = "<group>"; };
 		DCB79EEC1C55BAFC008B8ABF /* SpeakerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewCell.swift; sourceTree = "<group>"; };
 		DCB79EEE1C55C54D008B8ABF /* SpeakerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerTableViewController.swift; sourceTree = "<group>"; };
 		F7B0784692957DBD63299C76 /* Pods_TEDxOhioStateUniversity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEDxOhioStateUniversity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		DC59E6441C5539E10027AE37 /* TEDxOhioStateUniversity */ = {
 			isa = PBXGroup;
 			children = (
+				DCAD3E781C7946B4004562D0 /* TEDxOhioStateUniversity.entitlements */,
 				DC59E6451C5539E10027AE37 /* AppDelegate.swift */,
 				DC59F5D51C587B5D0000BF74 /* Speaker */,
 				DC59E6491C5539E10027AE37 /* Main.storyboard */,
@@ -200,6 +202,11 @@
 					DC59E6411C5539E10027AE37 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CEG3464YLE;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					DC59E6551C5539E10027AE37 = {
 						CreatedOnToolsVersion = 7.2;
@@ -438,7 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = TEDxOhioStateUniversity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishmeetgrewal.TEDxOhioStateUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +464,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TEDxOhioStateUniversity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishmeetgrewal.TEDxOhioStateUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";

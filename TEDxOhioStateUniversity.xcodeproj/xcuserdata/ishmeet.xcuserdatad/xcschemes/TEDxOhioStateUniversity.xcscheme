@@ -96,6 +96,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "TEDxOhioStateUniversity"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
