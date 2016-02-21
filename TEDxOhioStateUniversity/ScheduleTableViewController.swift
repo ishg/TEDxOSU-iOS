@@ -158,10 +158,10 @@ class ScheduleTableViewController: UITableViewController {
                 self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 2]
                 self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
             case 11,12,13,14,15:
-                self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 11]
+                self.selectedSpeaker = self.sessionTwoSpeakers[indexPath.row - 11]
                 self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
             case 18,19,20,21,22,23:
-                self.selectedSpeaker = self.sessionOneSpeakers[indexPath.row - 18]
+                self.selectedSpeaker = self.sessionThreeSpeakers[indexPath.row - 18]
                 self.performSegueWithIdentifier("goToSpeakerFromSchedule", sender: self)
             default:
                 ""
