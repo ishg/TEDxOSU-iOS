@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class SpeakerTableViewController: UITableViewController {
     
@@ -30,6 +31,7 @@ class SpeakerTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.speakers = SpeakerModel().getSpeakers()
+        //SwiftSpinner.show("Loading...")
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,7 +59,6 @@ class SpeakerTableViewController: UITableViewController {
         cell.nameLabel.text = speaker.name
         cell.titleLabel.text = speaker.title
         cell.profileImageView.image = UIImage(named: speaker.photo)!
-        
 
         return cell
     }
