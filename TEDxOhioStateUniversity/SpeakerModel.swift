@@ -18,7 +18,7 @@ class SpeakerModel: NSObject {
             "picture":"austin",
             "title":"Scholar-Activist",
             "lines":"Dr. Curtis Austin is an Associate Professor in the Department of African American and African Studies (AAAS) at The Ohio State University. He received his B.A. and M.A. in U.S. History from the University of Southern Mississippi and his Ph.D. in American History from Mississippi State University. While also serving as Director of Undergraduate Studies in AAAS, Professor Austin teaches graduate and undergraduate courses on the Civil Rights and Black Power Movements, the Black freedom struggle, and the history of American race relations. He is currently writing a book on the Black Power movement and conducting research for a book that examines the history of radicalism in Black liberation movements.\n\nAs part of his research, he has interviewed dozens of former members of the Black Panther Party, the Weather Underground, and the Revolutionary Action Movement. Dr. Austin enjoys taking part in civic engagement and has won numerous awards that honor his work. Among these are the C. Peter Magrath University Community Engagement Award, the W.K. Kellogg Foundation Award, the Distinguished Community Engagement Award from The Ohio State University, and the National Council for Black Studies Award for Outstanding Service in the Promotion of Social Responsibility. In 2007, his book Up Against the Wall: Violence in the Making and Unmaking of the Black Panther Party won the Choice Library Journal's Outstanding Academic Book Award. In his spare time, Dr. Austin enjoys reading and traveling with his wife, Dr. Leslie Alexander.",
-            "speech": ""
+            "speech": "TBD"
         ],
         [
             "name":"Carla J. Bailo",
@@ -149,9 +149,9 @@ class SpeakerModel: NSObject {
         var speakers = [Speaker]()
         
         //Create all speakers
-        for (i,s):(String, JSON) in json {
+        for (_,s):(String, JSON) in json {
             //Do something you want
-            var speaker = Speaker()
+            let speaker = Speaker()
             
             if let name = s["name"].string {
                 speaker.name = name
@@ -189,9 +189,9 @@ class SpeakerModel: NSObject {
         
         
         for i in scheduled{
-            for (j,s):(String, JSON) in json{
+            for (_,s):(String, JSON) in json{
                 if s["picture"].string == i{
-                    var speaker = Speaker()
+                    let speaker = Speaker()
                     if let name = s["name"].string {
                         speaker.name = name
                     }
