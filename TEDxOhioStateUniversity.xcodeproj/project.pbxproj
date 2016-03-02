@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31EA7FA682ACB1A6B4A15034 /* Pods_TEDxOhioStateUniversity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B0784692957DBD63299C76 /* Pods_TEDxOhioStateUniversity.framework */; };
+		DC1B3F5F1C867F7B004FCDAD /* LivestreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B3F5E1C867F7B004FCDAD /* LivestreamViewController.swift */; };
 		DC2C81D71C55E3BD0036FA61 /* SpeakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */; };
 		DC59E6461C5539E10027AE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59E6451C5539E10027AE37 /* AppDelegate.swift */; };
 		DC59E64B1C5539E10027AE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC59E6491C5539E10027AE37 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		79C2B414AB1E50F014FC7A2E /* Pods-TEDxOhioStateUniversity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDxOhioStateUniversity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TEDxOhioStateUniversity/Pods-TEDxOhioStateUniversity.debug.xcconfig"; sourceTree = "<group>"; };
 		B7EB3CD663F8DBE5177F840B /* Pods-TEDxOhioStateUniversity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TEDxOhioStateUniversity.release.xcconfig"; path = "Pods/Target Support Files/Pods-TEDxOhioStateUniversity/Pods-TEDxOhioStateUniversity.release.xcconfig"; sourceTree = "<group>"; };
+		DC1B3F5E1C867F7B004FCDAD /* LivestreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivestreamViewController.swift; sourceTree = "<group>"; };
 		DC2C81D61C55E3BD0036FA61 /* SpeakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerViewController.swift; sourceTree = "<group>"; };
 		DC59E6421C5539E10027AE37 /* TEDxOhioStateUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDxOhioStateUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC59E6451C5539E10027AE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				DC59E64C1C5539E10027AE37 /* Assets.xcassets */,
 				DC59E64E1C5539E10027AE37 /* LaunchScreen.storyboard */,
 				DC59E6511C5539E10027AE37 /* Info.plist */,
+				DC1B3F5E1C867F7B004FCDAD /* LivestreamViewController.swift */,
 			);
 			path = TEDxOhioStateUniversity;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1B3F5F1C867F7B004FCDAD /* LivestreamViewController.swift in Sources */,
 				DCB9BD7A1C7A41EA00F98CB7 /* ScheduleHeaderViewCell.swift in Sources */,
 				DCB9BD781C7A322300F98CB7 /* ScheduleTableViewController.swift in Sources */,
 				DC2C81D71C55E3BD0036FA61 /* SpeakerViewController.swift in Sources */,

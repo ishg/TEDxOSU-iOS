@@ -17,6 +17,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var headlineLabel: UILabel!
     
+    @IBOutlet weak var liveButton: UIButton!
+    
+    @IBAction func liveButtonClicked(sender: AnyObject) {
+        self.performSegueWithIdentifier("livestreamSegue", sender: self)
+    }
+    
+    
     @IBAction func webButtonPressed(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string:"http://tedx.osu.edu")!)
     }
@@ -77,13 +84,24 @@ class HomeViewController: UIViewController {
         self.bannerImageHeightConstraint.constant = width/764 * 366
         
         self.headlineLabel.text = "Join TEDxOhioStateUniversity for our 5th annual event. This year's theme, Reconstructing Reality, will feature students, faculty, staff, and alumni as speakers and performers who will inspire and challenge our concepts of science, technology, history, and life."
-        //self.headlineLabel.textColor = uicolorFromHex(0xe62b1e)
         
+        self.liveButton.backgroundColor = uicolorFromHex(0xe62b1e)
+        self.liveButton.layer.cornerRadius = 5
+        self.liveButton.layer.borderWidth = 1
+        self.liveButton.layer.borderColor = uicolorFromHex(0xe62b1e).CGColor
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func uicolorFromHex(rgbValue:UInt32)->UIColor{
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:1.0)
     }
     
 

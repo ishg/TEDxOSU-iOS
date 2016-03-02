@@ -617,7 +617,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5M1-Wl-mnr" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="552"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="603"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="banner-white" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-C4-Vpi">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
@@ -632,7 +632,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URA-c7-vpT" userLabel="Stack View - Info">
-                                                <rect key="frame" x="20" y="372" width="560" height="90"/>
+                                                <rect key="frame" x="20" y="423" width="560" height="90"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aeT-2y-ZzP" userLabel="Stack View - Location">
                                                         <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
@@ -687,7 +687,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="afR-f3-tVK" userLabel="Stack View - Social">
-                                                <rect key="frame" x="20" y="492" width="560" height="40"/>
+                                                <rect key="frame" x="20" y="543" width="560" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBg-fk-W6s">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -746,12 +746,28 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU8-Hj-1GF">
+                                                <rect key="frame" x="230" y="367" width="141" height="41"/>
+                                                <color key="backgroundColor" red="1" green="0.14349910569999999" blue="0.2327252199" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                                <color key="tintColor" red="1" green="0.14349910569999999" blue="0.2327252199" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" title="Event Livestream">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="liveButtonClicked:" destination="ySY-Wd-KQD" eventType="touchUpInside" id="LA0-5g-0fg"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="tU8-Hj-1GF" firstAttribute="top" secondItem="QVN-ss-GES" secondAttribute="bottom" constant="15" id="2dv-k0-OtV"/>
                                             <constraint firstItem="URA-c7-vpT" firstAttribute="leading" secondItem="5M1-Wl-mnr" secondAttribute="leading" constant="20" id="72I-7e-jjw"/>
                                             <constraint firstAttribute="bottom" secondItem="afR-f3-tVK" secondAttribute="bottom" priority="750" constant="20" id="94k-XO-DFM"/>
                                             <constraint firstItem="afR-f3-tVK" firstAttribute="top" secondItem="URA-c7-vpT" secondAttribute="bottom" priority="250" constant="30" id="BFb-lJ-JP4"/>
+                                            <constraint firstItem="URA-c7-vpT" firstAttribute="top" secondItem="tU8-Hj-1GF" secondAttribute="bottom" constant="15" id="HPr-vZ-tFF"/>
+                                            <constraint firstItem="tU8-Hj-1GF" firstAttribute="centerX" secondItem="5M1-Wl-mnr" secondAttribute="centerX" id="JR2-D2-p0V"/>
                                             <constraint firstAttribute="trailing" secondItem="afR-f3-tVK" secondAttribute="trailing" constant="20" id="Lcs-gO-LhG"/>
                                             <constraint firstItem="QVN-ss-GES" firstAttribute="leading" secondItem="5M1-Wl-mnr" secondAttribute="leading" constant="20" id="M1F-et-0gi"/>
                                             <constraint firstAttribute="trailing" secondItem="QVN-ss-GES" secondAttribute="trailing" constant="20" id="Sku-cS-C9M"/>
@@ -759,7 +775,6 @@
                                             <constraint firstItem="afR-f3-tVK" firstAttribute="leading" secondItem="5M1-Wl-mnr" secondAttribute="leading" constant="20" id="cAG-ip-EPK"/>
                                             <constraint firstAttribute="trailing" secondItem="tlT-C4-Vpi" secondAttribute="trailing" id="eu1-gS-O74"/>
                                             <constraint firstAttribute="trailing" secondItem="URA-c7-vpT" secondAttribute="trailing" constant="20" id="fzC-ZW-sev"/>
-                                            <constraint firstItem="URA-c7-vpT" firstAttribute="top" secondItem="QVN-ss-GES" secondAttribute="bottom" constant="20" id="gaG-Di-Mmd"/>
                                             <constraint firstItem="QVN-ss-GES" firstAttribute="top" secondItem="tlT-C4-Vpi" secondAttribute="bottom" constant="15" id="oj0-aY-EC5"/>
                                             <constraint firstItem="tlT-C4-Vpi" firstAttribute="top" secondItem="5M1-Wl-mnr" secondAttribute="top" id="pTl-KH-NYi"/>
                                             <constraint firstItem="afR-f3-tVK" firstAttribute="centerX" secondItem="5M1-Wl-mnr" secondAttribute="centerX" id="qSh-d6-5rh"/>
@@ -791,11 +806,51 @@
                         <outlet property="bannerImageHeightConstraint" destination="vG5-Q1-Vex" id="Cp5-j4-6Wq"/>
                         <outlet property="bannerImageView" destination="tlT-C4-Vpi" id="1hT-G7-DMf"/>
                         <outlet property="headlineLabel" destination="QVN-ss-GES" id="wkW-Kb-Xvh"/>
+                        <outlet property="liveButton" destination="tU8-Hj-1GF" id="Hrm-TI-kXd"/>
+                        <segue destination="Egt-me-qQL" kind="show" identifier="livestreamSegue" id="0Yj-vU-No5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSK-F2-swT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101" y="1467"/>
+        </scene>
+        <!--Livestream View Controller-->
+        <scene sceneID="JL0-Qq-fN4">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Egt-me-qQL" customClass="LivestreamViewController" customModule="TEDxOhioStateUniversity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8QJ-rq-sg8"/>
+                        <viewControllerLayoutGuide type="bottom" id="3b0-er-kzj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ve-Ze-hyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWx-LY-s5d">
+                                <rect key="frame" x="0.0" y="64" width="600" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="5Tx-va-hrC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Egt-me-qQL" id="kKk-a8-KiD"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="kWx-LY-s5d" firstAttribute="leading" secondItem="1ve-Ze-hyJ" secondAttribute="leading" id="2y4-sx-uDT"/>
+                            <constraint firstAttribute="trailing" secondItem="kWx-LY-s5d" secondAttribute="trailing" id="5Ac-l6-gcC"/>
+                            <constraint firstItem="kWx-LY-s5d" firstAttribute="top" secondItem="8QJ-rq-sg8" secondAttribute="bottom" id="ICP-pL-tOl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="kWx-LY-s5d" id="SmL-BM-2qM"/>
+                        <outlet property="webViewHeightConstraint" destination="5Tx-va-hrC" id="HTO-cu-YLk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMP-HS-INT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="1467"/>
         </scene>
     </scenes>
     <resources>
