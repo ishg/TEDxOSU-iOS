@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TEDxOhioStateUniversity/HomeViewController.swift"
-            timestampString = "478576694.222662"
+            timestampString = "478594816.740025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "facebookButtonPressed(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -207,6 +207,22 @@
             endingLineNumber = "80"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TEDxOhioStateUniversity/AboutViewController.swift"
+            timestampString = "478593097.85236"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "members"
+            landmarkType = "19">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

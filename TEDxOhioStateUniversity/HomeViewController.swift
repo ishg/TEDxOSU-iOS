@@ -19,6 +19,9 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var liveButton: UIButton!
     
+    @IBOutlet weak var importantInfoLabel: UILabel!
+    
+    
     @IBAction func liveButtonClicked(sender: AnyObject) {
         self.performSegueWithIdentifier("livestreamSegue", sender: self)
     }
@@ -84,6 +87,8 @@ class HomeViewController: UIViewController {
         self.bannerImageHeightConstraint.constant = width/764 * 366
         
         self.headlineLabel.text = "Join TEDxOhioStateUniversity for our 5th annual event. This year's theme, Reconstructing Reality, will feature students, faculty, staff, and alumni as speakers and performers who will inspire and challenge our concepts of science, technology, history, and life."
+        
+        self.importantInfoLabel.text = "Doors open in the Ohio Union Archie Griffin Ballroom East at 11:00AM for check-in and a pre-event reception (with refreshments). You are required to check-in at the Ohio Union. The first 500 audience members who check-in will receive a surprise gift!\n\nFor those who are driving to campus, parking is available in the Ohio Union parking garages. The Ohio Union South Garage is preferred. Wheel-chair Accessible Parking is located in front of Mershon Auditorium and in both Ohio Union Garages. Please check with CampusParc for rates."
         
         self.liveButton.backgroundColor = uicolorFromHex(0xe62b1e)
         self.liveButton.layer.cornerRadius = 5
